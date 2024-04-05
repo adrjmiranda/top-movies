@@ -125,3 +125,27 @@ nav {
 	border-radius: 3px;
 	box-shadow: 1px 1px 15px 5px rgba(255, 255, 255, 0.1);
 }
+
+/* Best Movies */
+.best-movies {
+	display: flex;
+	gap: 2rem;
+}
+
+.best-movies .movie-card-img {
+	flex: 17%;
+	height: 250px;
+	cursor: pointer;
+}
+
+.best-movies .movie-card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 3px;
+	transition: all 0.5s ease;
+}
+
+.best-movies .movie-card-img:hover img {
+	transform: scale(1.1);
+}
