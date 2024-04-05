@@ -24,11 +24,11 @@ body {
 }
 
 .container {
+	min-height: 100vh;
 	max-width: 1280px;
 	margin: 0 auto;
 	width: 100vw;
-	padding: 0 1rem;
-	min-height: 100vh;
+	padding: 0 1rem 2rem;
 }
 
 /* Navbar */
@@ -90,6 +90,20 @@ nav {
 	font-family: 'Anton', sans-serif;
 }
 
+.movie-info .cast {
+	display: flex;
+	gap: 0.8rem;
+}
+
+.movie-info .cast img {
+	width: 80px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 2px;
+	box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.1);
+	border: 1px solid white;
+}
+
 .movie-info .actions {
 	display: flex;
 	gap: 1rem;
@@ -149,3 +163,5 @@ nav {
 .best-movies .movie-card-img:hover img {
 	transform: scale(1.1);
 }
+
+/* Responsive */
