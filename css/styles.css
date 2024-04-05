@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -14,6 +13,59 @@ ul {
 	padding-left: 0;
 }
 
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url('../img/main-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100vw;
+	padding: 0 1rem;
+	min-height: 100vh;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
 .logo {
 	font-family: 'Anton', sans-serif;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.logo ion-icon {
+	font-size: 2rem;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.menu li a {
+	color: white;
+	text-transform: capitalize;
+	border: 2px solid white;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
 }
