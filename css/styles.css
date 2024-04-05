@@ -21,6 +21,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	overflow-x: hidden;
 }
 
 .container {
@@ -50,6 +51,17 @@ nav {
 
 .logo img {
 	height: 40px;
+}
+
+#toggle-menu {
+	background-color: transparent;
+	color: white;
+	border: none;
+	font-size: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 }
 
 .menu {
@@ -165,3 +177,89 @@ nav {
 }
 
 /* Responsive */
+@media screen and (min-width: 576px) {
+	#toggle-menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.best-movies {
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.best-movies .movie-card-img {
+		flex: 25%;
+		height: 550px;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	.best-movies {
+		gap: 1.5rem;
+	}
+
+	.best-movies .movie-card-img {
+		flex: 40%;
+		height: 750px;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.best-movies .movie-card-img {
+		flex: 100%;
+		height: 100%;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.main-movie {
+		flex-direction: column-reverse;
+		gap: 4rem;
+	}
+
+	.main-movie .movie-img img {
+		width: 100%;
+	}
+
+	.cast {
+		justify-content: center;
+	}
+
+	.actions {
+		flex-direction: column;
+	}
+
+	.actions .btn {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	nav {
+		flex-wrap: wrap;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu.show {
+		display: flex;
+		margin-top: 2rem;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.menu.show li {
+		width: 100%;
+	}
+
+	.menu.show li a {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+}

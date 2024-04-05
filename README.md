@@ -1,6 +1,6 @@
 # Trip Touch
 
-This is a page design project developed for a movie website using html and css. This project aims to create a modern and responsive user interface to present the website's services.
+This is a page design project developed for a movie website using HTML, CSS and JavaScript. This project aims to create a modern and responsive user interface to present the website's services.
 
 ## Installation
 
