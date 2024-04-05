@@ -48,8 +48,8 @@ nav {
 	font-size: 1.5rem;
 }
 
-.logo ion-icon {
-	font-size: 2rem;
+.logo img {
+	height: 40px;
 }
 
 .menu {
